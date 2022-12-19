@@ -1,0 +1,24 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+@media (max-width: 855px) {
+    div.setting div:first-child {
+        float: none;
+    }
+    
+    div.setting div:last-child {
+        float: none;
+    }
+
+    .setting {
+        text-align: center;
+    }
+
+    .setting li a {
+        font-size: 1.4rem;
+    }
+}

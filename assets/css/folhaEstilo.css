@@ -1,0 +1,211 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/*
+ * Google Fonts - https://fonts.google.com/
+*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap'); /* Fonte Open Sans */
+
+:root { /* Variáveis css */
+    font-size: 62.5%;
+    --default-font: 'Open Sans';
+    --color-profile: hwb(231 36% 25%);
+    --color-footer: hwb(210 44% 52%);
+}
+
+* { /* Pequeno reset */
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-position: inside;
+    text-decoration: none;
+}
+
+
+body {
+    font-size: 1.6rem;
+    font-family: var(--default-font), Arial, Helvetica, sans-serif;
+}
+
+.center {
+    max-width: 1200px;
+    width: 100%;
+    margin-inline: auto;
+    padding-inline: 1.5rem;
+}
+
+.flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+.center-search {
+    max-width: 50.0rem;
+    margin-inline: auto;
+}
+
+/*
+ * Cabeçalho do topo da página
+*/
+header#header {
+    padding: 1.9rem 0rem;
+}
+
+header#header nav#nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    list-style-type: none;
+    gap: 3.9rem;
+}
+
+header#header nav#nav li > a {
+    color: black;
+    font-size: 1.3rem;
+}
+
+header#header nav#nav li a:hover {
+    text-decoration: underline;
+}
+
+header#header nav#nav li > a#perfil-log {
+    background-color: var(--color-profile);
+    padding: 1.0rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+header#header nav#nav li > a#perfil-log:hover {
+    text-decoration: none;
+}
+
+/*
+ * Campo de pesquisa
+*/
+main#campo-pesquisa {
+    -webkit-margin-before: 6.5rem;
+            margin-block-start: 6.5rem;
+}
+
+main#campo-pesquisa img {
+    width: 90%;
+    display: block;
+    margin-inline: auto;
+}
+
+#search input {
+    min-width: 100%;
+    padding: .5rem 0rem .5rem 3.9rem;
+    background-image: url(../img/search.png);
+    background-position: calc(3.9rem/3) center;
+    background-repeat: no-repeat;
+    border: none;
+    color: #202124;
+}
+
+#search input:focus {
+    outline: none;
+}
+
+#search > div#btn-container {
+    -webkit-margin-before: 3.5rem;
+            margin-block-start: 3.5rem;
+    text-align: center;
+    color: #202124;
+}
+
+#search > div#btn-container > button {
+    padding: .5rem;
+    border: none;
+}
+
+#search > div#btn-container > button:hover {
+    border: .1rem solid #dadce0;
+    cursor: pointer;
+    -webkit-box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+            box-shadow: 0 1px 1px rgb(0 0 0 / 10%)
+}
+
+#search > div#btn-container > button.btn-search {
+    margin-right: 1.5rem;
+}
+
+/*
+ * Rodapé da página
+*/
+footer#rodape {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    color: var(--color-footer);
+    margin-bottom: 2.5rem;
+}
+
+footer#rodape .center::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+footer#rodape a {
+    color: var(--color-footer);
+}
+
+footer#rodape h4 {
+    font-weight: normal;
+}
+
+div.setting div:first-child {
+    float: left;
+}
+
+div.setting div:last-child {
+    float: right;
+}
+
+div.setting {
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+div.setting ul {
+    list-style-type: none;
+}
+
+div.setting li {
+    display: inline-block;
+}
+
+div.setting div:first-child > ul > li {
+    margin-left: 2.1rem;
+}
+
+div.setting div:last-child > ul > li {
+    margin-left: 2.1rem;
+}
